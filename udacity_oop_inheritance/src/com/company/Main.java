@@ -51,6 +51,9 @@ public class Main {
 
         System.out.println("Local Count: " + person4.localCount);
         System.out.println("Instance Count: " + Person.instanceCount);
+
+        // Static method example
+        System.out.println(Calculator.add(2, 3));
     }
 }
 
