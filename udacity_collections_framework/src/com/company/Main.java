@@ -1,7 +1,6 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.Stack;
+import java.util.*;
 
 
 public class Main {
@@ -44,5 +43,23 @@ public class Main {
         System.out.println(breakingNews);
         System.out.println(newsFeed.peek());
         System.out.println(newsFeed.empty());
+
+    // Queues and Deque
+        Queue<String> orders = new LinkedList<>();
+        orders.add("Order 1");
+        orders.add("Order 2");
+        orders.add("Order 3");
+        System.out.println(orders);
+        System.out.println(orders.poll());
+        System.out.println(orders.poll());
+        System.out.println(orders.poll());
+
+        Deque<Integer> numbers = new LinkedList<>();
+        numbers.add(2);
+        numbers.add(3);
+        numbers.addFirst(4);
+        numbers.addLast(9);
+        System.out.println(numbers);
+
     }
 }
