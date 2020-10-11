@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 
 public class Main {
@@ -34,5 +35,14 @@ public class Main {
             System.out.println(i);
         }
 
+    // Stacks
+        Stack<String> newsFeed = new Stack<>();
+        newsFeed.push(" Morning News");
+        newsFeed.push(" Afternoon News");
+        newsFeed.push(" Evening News");
+        String breakingNews = newsFeed.pop();
+        System.out.println(breakingNews);
+        System.out.println(newsFeed.peek());
+        System.out.println(newsFeed.empty());
     }
 }
