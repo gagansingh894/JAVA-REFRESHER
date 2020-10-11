@@ -25,5 +25,14 @@ public class Main {
         System.out.println(grades.size()); // Get size of list
         grades.remove(0); // Remove element at index 0
         grades.clear(); // Clear all elements
+
+    // Loops & Collections Code
+        grades.add(50);
+        grades.add(78);
+        grades.add(90);
+        for (int i : grades) {
+            System.out.println(i);
+        }
+
     }
 }
