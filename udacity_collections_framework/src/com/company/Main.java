@@ -61,5 +61,38 @@ public class Main {
         numbers.addLast(9);
         System.out.println(numbers);
 
+    // HashMap
+        HashMap<String, Book> allBooks = new HashMap<>();
+        Book taleOfTwoCities = new Book();
+        allBooks.put("123456", taleOfTwoCities);
+
+        System.out.println(allBooks.get("123456"));
+
+    }
+
+
+}
+
+// Helper code to understand HashMap
+class Library {
+    ArrayList<Book> allBooks;
+}
+
+class Book {
+    String title;
+    String author;
+    int numOfPages;
+    int publishedYear;
+    int edition;
+    String ISBN;
+
+    // Slow approach for searching
+    Book findBookByISBN(String isbn) {
+        for (Book book: new Library().allBooks) {
+            if (book.ISBN.equals(isbn)) {
+                return book;
+            }
+        }
+        return null;
     }
 }
