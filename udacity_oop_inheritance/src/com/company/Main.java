@@ -43,6 +43,14 @@ public class Main {
             System.out.println("Nope, can't do");
         }
 
+        // Static Example
+        Person person1 = new Person();
+        Person person2 = new Person();
+        Person person3 = new Person();
+        Person person4 = new Person();
+
+        System.out.println("Local Count: " + person4.localCount);
+        System.out.println("Instance Count: " + Person.instanceCount);
     }
 }
 
