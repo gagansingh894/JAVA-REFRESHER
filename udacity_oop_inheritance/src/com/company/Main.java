@@ -32,6 +32,17 @@ public class Main {
         System.out.println("COD Account: " + cod.account);
         System.out.println("COD Balance: " + cod.balance);
         System.out.println("COD Limit: " + cod.limit);
+
+        // Polymorphism
+        Queen queen = new Queen();
+        Position testPosition = new Position(3, 10);
+
+        if (queen.isValidMove(testPosition)) {
+            System.out.println("Yes, I can move there.");
+        } else {
+            System.out.println("Nope, can't do");
+        }
+
     }
 }
 
