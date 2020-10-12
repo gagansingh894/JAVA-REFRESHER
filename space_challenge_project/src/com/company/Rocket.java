@@ -2,9 +2,14 @@ package com.company;
 
 public class Rocket implements SpaceShip{
 
-    int getCost() {
-        return 0;
-    }
+    int cost;
+    int weight;
+    int maxWeight;
+    double launchExplosion;
+    double landingCrash;
+    int currentWeight;
+
+// Interface methods
 
     @Override
     public boolean launch() {
@@ -18,11 +23,13 @@ public class Rocket implements SpaceShip{
 
     @Override
     public boolean canCarry(Item item) {
-        return false;
+        return this.currentWeight + item.getWeight() <= maxWeight;
     }
 
     @Override
-    public void carry(Item item) {
+    public int carry(Item item) {
+        this.currentWeight += item.getWeight();
+        return this.currentWeight;
 
     }
 }
