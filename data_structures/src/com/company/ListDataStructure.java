@@ -7,7 +7,7 @@ public class ListDataStructure {
 
     ListDataStructure() {
 
-        List<Employee> employeeList = new ArrayList<>();
+        ArrayList<Employee> employeeList = new ArrayList<>();
         // Add to list
         employeeList.add(new Employee("Jane", "Jones", 123));
         employeeList.add(new Employee("John", "Doe", 4567));
